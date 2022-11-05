@@ -1,7 +1,7 @@
 pipeline {
     environment {
         registry = "scoma/devops-tp4"
-        registryCredential = 'dockerhub'
+        registryCredential = 'DockerHubAccount'
         dockerImage = ''
     }
 
