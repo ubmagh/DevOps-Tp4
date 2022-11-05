@@ -4,12 +4,13 @@ pipeline {
         registryCredential = 'dockerhub'
         dockerImage = ''
     }
-    
+
     agent any
     stages {
         stage('Cloning Git') {
             steps {
-                git 'https://github.com/ubmagh/DevOps-Tp4'
+                git branch: 'main',
+                url 'https://github.com/ubmagh/DevOps-Tp4'
             }
         }
         stage('Building image') {
